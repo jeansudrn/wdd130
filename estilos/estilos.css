@@ -1,14 +1,36 @@
+/* Regra obrigatória para o título principal */
+h1 {
+  color: #222;
+}
+
+/* Estilização da navegação (Cabeçalho) */
+nav {
+  background-color: #333;
+  padding: 15px;
+}
+
+/* Regra obrigatória para os links do menu */
+nav a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-decoration: none; 
+  text-align: center;    
+}
+
 /* Limita a largura do conteúdo principal */
 main {
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* Estilização específica para a imagem de perfil dentro do main */
+/* Regra corrigida com todas as propriedades exigidas para a imagem de perfil */
 main img {
   width: 150px;
   height: auto;
-  border-radius: 50%; /* Opcional: deixa a foto redonda se desejar */
+  border: 5px solid #fff;                  /* Borda branca ao redor da foto */
+  padding: 5px;                            /* Espaçamento entre a imagem e a borda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidade */
 }
 
 /* Estilização do elemento aside */
