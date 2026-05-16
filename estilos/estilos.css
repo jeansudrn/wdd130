@@ -1,0 +1,40 @@
+/* Limita a largura do conteúdo principal */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilização específica para a imagem de perfil dentro do main */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%; /* Opcional: deixa a foto redonda se desejar */
+}
+
+/* Estilização do elemento aside */
+aside {
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Define o tamanho da imagem regional dentro do aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Remove o preenchimento padrão de todos os parágrafos */
+p {
+  padding: 0;
+}
+
+/* Estilização do rodapé */
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  text-align: center;
+}
