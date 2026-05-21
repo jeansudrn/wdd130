@@ -1,62 +1,74 @@
-/* Regra obrigatória para o título principal */
-h1 {
+/* Resetar CSS do meu projeto */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   color: #222;
+  background: #fff;
+  margin: 0;
 }
 
-/* Estilização da navegação (Cabeçalho) */
 nav {
-  background-color: #333;
-  padding: 15px;
+  background-color: steelblue;
 }
 
-/* Regra obrigatória para os links do menu */
 nav a {
-  color: #fff;
+  color: white;
   padding: 10px;
-  display: block;
-  text-decoration: none; 
-  text-align: center;    
+  display: block;   
 }
 
-/* Limita a largura do conteúdo principal */
-main {
-  max-width: 600px;
-  margin: 0 auto;
+h1 {
+  color: steelblue;
 }
 
-/* Regra corrigida com todas as propriedades exigidas para a imagem de perfil */
 main img {
   width: 150px;
   height: auto;
-  border: 5px solid #fff;                  /* Borda branca ao redor da foto */
-  padding: 5px;                            /* Espaçamento entre a imagem e a borda */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidade */
+  border: 1px solid steelblue;                  
+  padding: 2px;                            
+  box-shadow: 0 0 30px gray; 
+  float: right;
 }
 
-/* Estilização do elemento aside */
-aside {
-  width: 300px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-/* Define o tamanho da imagem regional dentro do aside */
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-/* Remove o preenchimento padrão de todos os parágrafos */
 p {
   padding: 0;
 }
 
-/* Estilização do rodapé */
-footer {
-  margin-top: 40px;
-  border-top: 1px solid #333;
+aside {
+  width: 20rem;
+  color: #333;
   text-align: center;
+  position: relative;
+}
+
+aside img {
+  width: 250px;
+  height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  left: 60px;
+}
+
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/*Seletores de Classe*/
+
+.caixa {
+  
+  border: 1px solid #ccc; 
+  padding: 1em;
+  margin: 1em auto;
+  background-color: #eee;
 }
