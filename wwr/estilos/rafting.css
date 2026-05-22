@@ -43,6 +43,8 @@ header nav ul li a {
   color: var(--cor-primaria);
 }
 
+
+
 /* Alinhamento e estilo dos títulos principais */
 h1, h2 {
   font-family: var(--fonte-titulo);
