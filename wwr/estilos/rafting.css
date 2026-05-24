@@ -1,8 +1,8 @@
 /* rafting.css */
 
 :root {
-  --cor-primaria: #0066cc;    /* Azul dos links */
-  --cor-texto: #333333;       /* Cor padrão do texto */
+  --cor-primaria: #0066cc;    
+  --cor-texto: #333333;       
   --fonte-body: Arial, sans-serif;                      
 }
 
@@ -16,17 +16,15 @@ body {
   font-family: var(--fonte-body);
   background-color: #ffffff;
   color: var(--cor-texto);
-  text-align: center; /* Alinha o conteúdo ao centro */
+  text-align: center; 
 }
 
-/* Largura da página baseada na imagem */
 header, main, footer {
   width: 450px;
   margin: 0 auto;
   padding: 10px;
 }
 
-/* Cabeçalho e Logo */
 header {
   background-color: transparent;
   border: none;
@@ -38,7 +36,7 @@ header {
   margin-top: 10px;
 }
 
-/* Menu de Navegação */
+/* Menu */
 nav ul {
   list-style: none;
   text-align: left;
@@ -55,22 +53,50 @@ nav ul li a {
   font-size: 14px;
 }
 
-/* Imagens Principais */
-.main-img {
+/* --- BLOCO HERO (Exigido pelo Validador) --- */
+.hero {
+  position: relative; /* Base para o posicionamento dos filhos */
   width: 100%;
-  height: auto;
-  display: block;
   margin-bottom: 20px;
 }
 
-/* Textos e Títulos */
-h1 {
-  font-size: 24px;
-  color: #000000;
-  text-align: left;
-  margin: 20px 0;
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+.hero h1 {
+  position: absolute; /* Sobreposto no topo da imagem */
+  top: 10px;
+  left: 15px;
+  font-size: 24px;
+  color: #ffffff; /* Cor branca para aparecer sobre a imagem */
+  text-align: left;
+  margin: 0;
+  z-index: 2;
+}
+
+.hero article {
+  position: absolute; /* Sobreposto no fundo da imagem */
+  bottom: 10px;
+  left: 15px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro transparente para o texto ficar legível */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.hero article p {
+  font-size: 13.5px;
+  line-height: 1.4;
+  text-align: left;
+  color: #ffffff; /* Texto branco sobre o fundo escuro */
+  margin: 0;
+}
+
+/* --- SEÇÕES --- */
 h2 {
   font-size: 18px;
   color: #000000;
@@ -78,7 +104,7 @@ h2 {
   margin: 20px 0 10px 0;
 }
 
-p {
+section p {
   font-size: 13.5px;
   line-height: 1.4;
   text-align: left;
@@ -97,17 +123,18 @@ footer p {
   color: #555555;
 }
 
-/* Redes Sociais uma abaixo da outra */
-.socialmedia {
+/* Redes Sociais */
+footer nav.socialmedia {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-top: 30px;
+  margin: 30px 0 0 0;
+  padding: 0;
 }
 
-.socialmedia img {
-  width: 250px; /* Tamanho grande como na imagem */
+footer nav.socialmedia img {
+  width: 250px; 
   height: auto;
   display: block;
 }
