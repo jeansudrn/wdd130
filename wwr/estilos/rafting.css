@@ -96,6 +96,15 @@ nav ul li a {
   margin: 0;
 }
 
+/* Regra exigida pelo validador */
+.hero article img {
+  float: right;
+  width: 100px; /* Ajusta o tamanho para caber ao lado do texto */
+  height: auto;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
 /* --- SEÇÕES --- */
 h2 {
   font-size: 18px;
@@ -137,4 +146,8 @@ footer nav.socialmedia img {
   width: 250px; 
   height: auto;
   display: block;
+}
+
+.socialmedia a {
+  text-decoration: none;
 }
