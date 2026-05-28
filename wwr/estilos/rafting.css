@@ -69,7 +69,7 @@ nav ul li a:hover {
   color: #004499;
 }
 
-/* --- BLOCO HERO CORRIGIDO (CONTRASTE ALTO) --- */
+/* --- BLOCO HERO CORRIGIDO (ZERA ERROS DE CONTRASTE) --- */
 .hero {
   position: relative; 
   width: 100%;
@@ -84,13 +84,14 @@ nav ul li a:hover {
   border-radius: 8px;
 }
 
+/* Corrigido: plano de fundo opaco e cor definida diretamente para o validador */
 .hero h1 {
   position: absolute; 
   top: 20px;
   left: 25px;
   font-size: 32px;
-  color: #ffffff; /* Texto Branco */
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro para contraste de 4.5:1+ */
+  color: #ffffff !important; 
+  background-color: #000000; /* Fundo sólido preto garante contraste infinito no DevTools */
   padding: 5px 15px;
   border-radius: 4px;
   text-align: left;
@@ -98,22 +99,24 @@ nav ul li a:hover {
   z-index: 2;
 }
 
+/* Corrigido: Fundo totalmente opaco para forçar o cálculo correto do DevTools */
 .hero article {
   position: absolute; 
   bottom: 20px;
   left: 25px;
   right: 25px;
-  background-color: rgba(0, 0, 0, 0.75); /* Fundo um pouco mais escuro para segurança */
+  background-color: #111111; /* Fundo escuro sólido resolve o cálculo de transparência do validador */
   padding: 15px;
   border-radius: 6px;
   z-index: 2;
 }
 
+/* Corrigido: Forçado a cor branca com prioridade máxima para sobrescrever o body */
 .hero article p {
   font-size: 15px;
   line-height: 1.5;
   text-align: left;
-  color: #ffffff; /* CORRIGIDO: Forçado branco para contraste perfeito sobre fundo escuro */
+  color: #ffffff !important; 
   margin: 0;
 }
 
