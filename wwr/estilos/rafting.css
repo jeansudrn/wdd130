@@ -69,47 +69,55 @@ nav ul li a:hover {
   color: #004499;
 }
 
-/* --- BLOCO HERO ZERO ERROS (SEM SOBREPOSIÇÃO CONFLITANTE) --- */
+/* --- BLOCO HERO COM POSICIONAMENTO ABSOLUTO E CONTRASTE CORRIGIDO --- */
 .hero {
-  position: relative; 
+  position: relative; /* Base obrigatória para o posicionamento dos filhos */
   width: 100%;
   margin-bottom: 30px;
   margin-top: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .hero img.main-img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
 }
 
-/* Corrigido: Título agora usa cor escura em fundo branco para contraste perfeito */
+/* Corrigido: Mantém absoluto com fundo escuro sólido para garantir contraste ao texto branco */
 .hero h1 {
+  position: absolute; 
+  top: 20px;
+  left: 25px;
   font-size: 32px;
-  color: #111111; 
-  background-color: #ffffff;
+  color: #ffffff; /* Texto branco puro */
+  background-color: #000000; /* Fundo preto sólido para contraste perfeito de 21:1 */
+  padding: 8px 15px;
+  border-radius: 4px;
   text-align: left;
-  margin: 20px 25px 10px 25px;
+  margin: 0;
+  z-index: 2;
 }
 
-/* Corrigido: Card de texto usa fundo branco e texto escuro padrão */
+/* Corrigido: Mantém absoluto com fundo de alta opacidade (85%) para melhor leitura */
 .hero article {
-  background-color: #ffffff;
-  padding: 0 25px;
-  overflow: hidden; /* Limpa o float da imagem interna */
+  position: absolute; 
+  bottom: 20px;
+  left: 25px;
+  right: 25px;
+  background-color: rgba(0, 0, 0, 0.85); /* Fundo bem escuro garante a leitura da fonte */
+  padding: 15px;
+  border-radius: 6px;
+  z-index: 2;
+  color: #ffffff; /* Força os elementos internos a herdarem a cor branca */
 }
 
-/* Corrigido: Texto escuro sobre o fundo branco garante contraste excelente */
+/* Corrigido: Texto forçado para branco puro eliminando o cinza escuro do body */
 .hero article p {
   font-size: 15px;
   line-height: 1.5;
   text-align: left;
-  color: #333333; 
+  color: #ffffff; /* Contraste perfeito sobre o fundo escuro do container */
   margin: 0;
 }
 
