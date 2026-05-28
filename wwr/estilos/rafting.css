@@ -69,54 +69,47 @@ nav ul li a:hover {
   color: #004499;
 }
 
-/* --- BLOCO HERO CORRIGIDO (ZERA ERROS DE CONTRASTE) --- */
+/* --- BLOCO HERO ZERO ERROS (SEM SOBREPOSIÇÃO CONFLITANTE) --- */
 .hero {
   position: relative; 
   width: 100%;
   margin-bottom: 30px;
   margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.hero img {
+.hero img.main-img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 
-/* Corrigido: plano de fundo opaco e cor definida diretamente para o validador */
+/* Corrigido: Título agora usa cor escura em fundo branco para contraste perfeito */
 .hero h1 {
-  position: absolute; 
-  top: 20px;
-  left: 25px;
   font-size: 32px;
-  color: #ffffff !important; 
-  background-color: #000000; /* Fundo sólido preto garante contraste infinito no DevTools */
-  padding: 5px 15px;
-  border-radius: 4px;
+  color: #111111; 
+  background-color: #ffffff;
   text-align: left;
-  margin: 0;
-  z-index: 2;
+  margin: 20px 25px 10px 25px;
 }
 
-/* Corrigido: Fundo totalmente opaco para forçar o cálculo correto do DevTools */
+/* Corrigido: Card de texto usa fundo branco e texto escuro padrão */
 .hero article {
-  position: absolute; 
-  bottom: 20px;
-  left: 25px;
-  right: 25px;
-  background-color: #111111; /* Fundo escuro sólido resolve o cálculo de transparência do validador */
-  padding: 15px;
-  border-radius: 6px;
-  z-index: 2;
+  background-color: #ffffff;
+  padding: 0 25px;
+  overflow: hidden; /* Limpa o float da imagem interna */
 }
 
-/* Corrigido: Forçado a cor branca com prioridade máxima para sobrescrever o body */
+/* Corrigido: Texto escuro sobre o fundo branco garante contraste excelente */
 .hero article p {
   font-size: 15px;
   line-height: 1.5;
   text-align: left;
-  color: #ffffff !important; 
+  color: #333333; 
   margin: 0;
 }
 
