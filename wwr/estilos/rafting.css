@@ -69,7 +69,7 @@ nav ul li a:hover {
   color: #004499;
 }
 
-/* --- BLOCO HERO CORRIGIDO PARA O VALIDADOR --- */
+/* --- BLOCO HERO CORRIGIDO --- */
 .hero {
   position: relative; 
   width: 100%;
@@ -84,7 +84,6 @@ nav ul li a:hover {
   border-radius: 8px;
 }
 
-/* Corrigido: Adicionado text-shadow sólido que força o DevTools a reconhecer o contraste escuro */
 .hero h1 {
   position: absolute; 
   top: 20px;
@@ -92,7 +91,7 @@ nav ul li a:hover {
   font-size: 32px;
   color: #ffffff; 
   background-color: #000000; 
-  text-shadow: 0 0 1px #000000, 0 0 2px #000000; /* Força o algoritmo a validar contra preto */
+  text-shadow: 0 0 1px #000000, 0 0 2px #000000;
   padding: 8px 15px;
   border-radius: 4px;
   text-align: left;
@@ -194,9 +193,9 @@ section p {
   margin-top: 8px;
 }
 
-/* --- ADIÇÕES OTIMIZADAS PARA A PÁGINA CONTATO.HTML --- */
+/* --- REGRAS PARA A PÁGINA CONTATO.HTML --- */
 
-/* Seção de Informações da Empresa (Topo da página de contato) */
+/* Informações da Empresa (Topo) */
 .contato-topo {
   margin-bottom: 25px;
   background-color: #ffffff;
@@ -228,7 +227,7 @@ section p {
   text-decoration: underline;
 }
 
-/* Container de Layout Lado a Lado (Mapa e Formulário) */
+/* Layout Flexbox (Mapa e Formulário lado a lado) */
 .contato-conteudo {
   display: flex;
   flex-direction: row;
@@ -236,7 +235,7 @@ section p {
   margin-bottom: 30px;
 }
 
-/* Elemento do Mapa do Google */
+/* Container do Mapa */
 .contato-mapa {
   flex: 1;
   background-color: #ffffff;
@@ -250,10 +249,10 @@ section p {
   width: 100%;
   height: 100%;
   min-height: 450px;
-  border: none; /* Substitui com sucesso o inline style="border:0" */
+  border: none;
 }
 
-/* Elemento do Formulário */
+/* Container do Formulário */
 .contato-formulario {
   flex: 1;
   background-color: #ffffff;
@@ -263,7 +262,7 @@ section p {
   text-align: left;
 }
 
-/* Campos de entrada estruturados */
+/* Campos de entrada */
 .campo-grupo {
   display: flex;
   flex-direction: column;
@@ -295,7 +294,7 @@ section p {
   border-color: var(--cor-primaria);
 }
 
-/* Fieldset estilizado para os botões do tipo Radio */
+/* Grupos Radio e Checkbox */
 .campo-proposito {
   border: none;
   margin-bottom: 15px;
@@ -320,12 +319,12 @@ section p {
   cursor: pointer;
 }
 
-/* Botão de Envio Estilizado */
+/* Botão de Envio */
 .btn-enviar {
   display: block;
   width: 100%;
   padding: 12px;
-  background-color: #e0e0e0; /* Cor neutra baseada no wireframe */
+  background-color: #e0e0e0;
   color: #333333;
   border: 1px solid #999999;
   border-radius: 4px;
@@ -345,7 +344,7 @@ section p {
   transform: scale(0.99);
 }
 
-/* Seção Inferior de Funcionários */
+/* Seção de Funcionários */
 .contato-equipe {
   background-color: #ffffff;
   padding: 25px;
@@ -365,7 +364,6 @@ section p {
   gap: 20px;
 }
 
-/* Compartilhamento das propriedades de blocos semelhantes (Reutilização) */
 .perfil-card {
   background-color: #f9f9f9;
   border: 1px solid #dddddd;
@@ -390,7 +388,7 @@ section p {
   font-weight: bold;
 }
 
-/* --- RODAPÉ HORIZONTAL E ALINHADO À DIREITA --- */
+/* --- RODAPÉ HORIZONTAL AJUSTADO PARA CLASSE REDES-SOCIAIS --- */
 footer {
   margin-top: 40px;
   border-top: 1px solid #eeeeee;
@@ -408,7 +406,7 @@ footer p {
   margin: 0;
 }
 
-footer nav.socialmedia {
+footer nav.redes-sociais {
   display: flex;
   flex-direction: row; 
   justify-content: flex-end; 
@@ -417,12 +415,12 @@ footer nav.socialmedia {
   padding: 0;
 }
 
-footer nav.socialmedia img {
+footer nav.redes-sociais img {
   width: 32px; 
   height: auto;
   display: block;
 }
 
-.socialmedia a {
+.redes-sociais a {
   text-decoration: none;
 }
