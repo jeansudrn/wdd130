@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Entre em contato com a Corredeiras Suprema. Tire suas dúvidas, envie sugestões ou faça sua reserva de rafting em Foz do Iguaçu.">
+    <meta name="author" content="Jean Leal">
+    <title>Fale Conosco - Corredeiras Suprema</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="imagens/logo.png" alt="Logo corredeiras Suprema" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Superior: Dados de Contato -->
+        <section class="contato-topo">
+            <h1>Companhia de Rafting em Corredeiras</h1>
+            <p>123 Rua Principal do Rio</p>
+            <p>Foz do Iguaçu, Paraná</p>
+            <p>+55 45 99999-9999</p>
+            <p><a href="mailto:info@correiras.com">info@correiras.com</a></p>
+        </section>
+
+        <!-- Seção Central: Mapa e Formulário lado a lado -->
+        <div class="contato-conteudo">
+
+            <!-- Bloco do Mapa (iframe limpo de estilos inline) -->
+            <section class="contato-mapa">
+                <iframe src="https://google.com" width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização da Corredeiras Suprema">
+                </iframe>
+            </section>
+
+            <!-- Bloco do Formulário -->
+            <section class="contato-formulario">
+                <form action="#" method="POST">
+
+                    <div class="campo-grupo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+                    </div>
+
+                    <fieldset class="campo-proposito">
+                        <legend>Propósito da Mensagem</legend>
+                        <div class="opcao-radio">
+                            <input type="radio" id="opcao-geral" name="proposito" value="Consulta Geral" checked>
+                            <label for="opcao-geral">Dúvida Geral</label>
+                        </div>
+                        <div class="opcao-radio">
+                            <input type="radio" id="opcao-reserva" name="proposito" value="Pergunta sobre Reserva">
+                            <label for="opcao-reserva">Pergunta sobre Reserva</label>
+                        </div>
+                        <div class="opcao-radio">
+                            <input type="radio" id="opcao-sugestao" name="proposito" value="Sugestão de Site">
+                            <label for="opcao-sugestao">Sugestão</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="campo-grupo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite aqui" rows="4" required></textarea>
+                    </div>
+
+                    <div class="opcao-checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                        <label for="newsletter">Por favor, me inscreva na newsletter mensal</label>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Entrar em Contato</button>
+
+                </form>
+            </section>
+        </div>
+
+        <!-- Seção Inferior: Equipe / Perfis -->
+        <section class="contato-equipe">
+            <h2>Estamos Aqui para Servi-lo</h2>
+            <div class="grid-equipe">
+
+                <figure class="perfil-card">
+                    <img src="imagens/funcionario1.jpg" alt="Perfil do Funcionário 1">
+                    <figcaption>Perfil do Funcionário</figcaption>
+                </figure>
+
+                <figure class="perfil-card">
+                    <img src="imagens/funcionario2.jpg" alt="Perfil do Funcionário 2">
+                    <figcaption>Perfil do Funcionário</figcaption>
+                </figure>
+
+                <figure class="perfil-card">
+                    <img src="imagens/funcionario3.jpg" alt="Perfil do Funcionário 3">
+                    <figcaption>Perfil do Funcionário</figcaption>
+                </figure>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Conteúdo do Rodapé incluindo Ícones/Links de Mídia Social</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="imagens/facebook.svg" alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
+                <img src="imagens/linkedin.svg" alt="Ícone do Linkedin">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="imagens/instagram.svg" alt="Ícone do Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
